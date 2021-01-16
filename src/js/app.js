@@ -5,7 +5,7 @@ import BuyListTable from './list-editor/BuyListTable';
 import { data as defaultData } from './list-editor/data';
 
 const hometaskSwitch = new HometaskSwitch();
-hometaskSwitch.switchTaskManually('trip-calendar');
+hometaskSwitch.switchTaskManually('popovers');
 
 const togglePopover = new TogglePopover();
 togglePopover.addEventListeners();
