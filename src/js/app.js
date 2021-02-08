@@ -3,6 +3,7 @@ import TogglePopover from './toggle-popovers/TogglePopover';
 import LocalData from './LocalData';
 import BuyListTable from './list-editor/BuyListTable';
 import { data as defaultData } from './list-editor/data';
+import CalendarForm from './trip-calendar/CalendarForm';
 
 const hometaskSwitch = new HometaskSwitch();
 hometaskSwitch.switchTaskManually('popovers');
@@ -13,3 +14,5 @@ togglePopover.addEventListeners();
 const localBuyList = LocalData.load('buylist');
 const data = localBuyList || defaultData;
 const buyListTable = new BuyListTable(data);
+
+const calendarForm = new CalendarForm();

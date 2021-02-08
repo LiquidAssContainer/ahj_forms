@@ -154,8 +154,8 @@
     </div>
   </section>
 
-  <section class="trip-calendar-section hidden" data-switch-section="trip-calendar">
-    <!-- <h2 class="calendar_header">Поиск билетов</h2>
+  <section class="trip-calendar_section hidden" data-switch-section="trip-calendar">
+    <h2 class="calendar_header">Поиск билетов</h2>
     <form action="" class="calendar_form">
       <label class="calendar_form_label">
         <span class="calendar_form_label_text">Откуда</span>
@@ -184,16 +184,39 @@
       
       <label class="calendar_form_label">
         <span class="calendar_form_label_text">Туда и обратно</span>
-        <input class="calendar_form_input checkbox-input" type="checkbox">
+        <input class="calendar_form_input checkbox-input" id="return-date-switch" type="checkbox">
       </label>
       
-      <label class="calendar_form_label">
-        <span class="calendar_form_label_text">Дата</span>
-        <input class="calendar_form_input text-input" type="text">
-      </label>
+      <div class="one-way-date_container">
+        <div class="date-input_container">
+          <label class="calendar_form_label" id="one-way-date_label">
+            <span class="calendar_form_label_text">Дата</span>
+            <input class="calendar_form_input date-input" id="one-way-date" type="date">
+            <button class="open-date-picker"></button>
+          </label>
+        </div>
+      </div>
+      
+      <div class="destination-return_container hidden">
+        <div class="date-input_container">
+          <label class="calendar_form_label">
+            <span class="calendar_form_label_text">Туда</span>
+            <input class="calendar_form_input date-input" id="destination-date" type="date">
+            <button class="open-date-picker"></button>
+          </label>
+        </div>
+        
+        <div class="date-input_container">
+          <label class="calendar_form_label">
+            <span class="calendar_form_label_text">Обратно</span>
+            <input class="calendar_form_input date-input" id="return-date" type="date">
+            <button class="open-date-picker"></button>
+          </label>
+        </div>
+      </div>
 
       <button class="calendar_form_submit" type="sumbit">Найти билеты</button>
-    </form> -->
+    </form>
   </section>
 </body>
 

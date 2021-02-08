@@ -1,5 +1,124 @@
+.trip-calendar_section {
+  width: 540px;
+  padding: 10px;
+}
+
 .calendar_form {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.calendar_form_label {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+.calendar_form_label:not(:nth-child(1)):not(:nth-child(2)) {
+  width: 50%;
+}
+
+.calendar_form_label_text {
+  display: block;
+}
+
+.calendar_form_input {
+  display: block;
+  width: 100%;
+}
+
+.calendar_form_input.checkbox-input {
+  width: auto;
+}
+
+.one-way-date_container {
+  display: flex;
+  width: 100%;
+}
+
+.destination-return_container {
+  display: flex;
+  width: 100%;
+}
+
+.date-input_container {
+  width: 50%;
+}
+
+.date-picker_container {
+  border: 1px solid grey;
+  display: inline-flex;
   flex-direction: column;
-  width: 960px;
+
+  position: absolute;
+  background-color: white;
+}
+
+.date-picker_month-switch {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.date-picker_btn {
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.date-picker_day-of-week {
+  border: none;
+  text-align: center;
+}
+
+.date-picker_day {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.date-picker_day__available {
+  cursor: pointer;
+}
+
+.date-picker_day__unavailable {
+  cursor: default;
+  color: #bbb;
+}
+
+.chosen-day[class] {
+  background-color: #000;
+  color: #fff;
+}
+
+.today[class] {
+  border-color: #000;
+}
+
+.open-date-picker {
+  width: 20px;
+  height: 20px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url('../img/calendar_icon.png');
+  background-size: cover;
+}
+
+[type='date']::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.calendar_form_submit {
+  width: 100%;
 }
